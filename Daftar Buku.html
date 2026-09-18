@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://localhost/perpustakaan2/buku.php -->
+<html lang="id"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daftar Buku</title>
+
+    <link rel="stylesheet" href="./Daftar Buku_files/style.css">
+
+</head>
+
+<body>
+
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+    <div class="sidebar-logo">
+
+        <div class="logo-icon">
+            📚
+        </div>
+
+        <div class="logo-text">
+            Pinjaman Warkah<span>.</span>
+        </div>
+
+    </div>
+
+
+    <!-- PROFIL ADMIN -->
+
+    <div class="admin-profile">
+
+        <div class="admin-avatar">
+            A
+        </div>
+
+        <div class="admin-info">
+
+            <strong>
+                admin            </strong>
+
+            <small>
+                Administrator
+            </small>
+
+        </div>
+
+    </div>
+
+
+    <div class="menu-title">
+        Menu Utama
+    </div>
+
+
+    <ul class="sidebar-menu">
+
+
+        <!-- DASHBOARD -->
+
+        <li>
+
+            <a href="http://localhost/perpustakaan2/dashboard.php">
+
+                <span>🏠</span>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+
+        <!-- DAFTAR BUKU -->
+
+        <li>
+
+            <a href="http://localhost/perpustakaan2/buku.php" class="active">
+
+                <span>📖</span>
+
+                Daftar Buku Arsip
+
+            </a>
+
+        </li>
+
+
+        <!-- PEMINJAMAN -->
+
+        <li>
+
+            <a href="http://localhost/perpustakaan2/peminjaman.php">
+
+                <span>📋</span>
+
+                Peminjaman
+
+            </a>
+
+        </li>
+
+
+        <!-- LOGOUT -->
+
+        <li>
+
+            <a href="http://localhost/perpustakaan2/logout.php" class="logout" onclick="return confirm('Yakin ingin logout?')">
+
+                <span>🚪</span>
+
+                Logout
+
+            </a>
+
+        </li>
+
+
+    </ul>
+
+</div>
+
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main-content">
+
+
+    <!-- HEADER -->
+
+    <div class="top-header">
+
+        <div class="header-left">
+
+            <h1>
+                Daftar Buku
+            </h1>
+
+            <p>
+                Kelola seluruh koleksi buku Arsip SU,GS,GU,SUS.
+            </p>
+
+        </div>
+
+
+        <div class="header-date">
+
+            📚
+
+            Koleksi Buku
+
+        </div>
+
+    </div>
+
+
+
+    <!-- CONTENT -->
+
+    <div class="content-box">
+
+
+        <div class="content-header">
+
+
+            <div>
+
+                <h2>
+                    Data Buku
+                </h2>
+
+                <p>
+                    Daftar koleksi buku yang tersedia
+                </p>
+
+            </div>
+
+
+            <a href="http://localhost/perpustakaan2/tambah_buku.php" class="btn btn-primary">
+
+                ＋ Tambah Buku
+
+            </a>
+
+
+        </div>
+
+
+
+        <!-- TABLE -->
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        No
+                    </th>
+
+                    <th>
+                        Judul Buku
+                    </th>
+                    <th> 
+    Jenis Berkas
+</th>
+
+                    <th>
+                        No.Berkas
+</th>
+
+
+                    <th>
+                        Tahun
+                    </th>
+
+                    <th>
+                        Stok
+                    </th>
+
+                    <th>
+                        Aksi
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+
+            
+
+                <tr>
+
+
+                    <!-- NO -->
+
+                    <td>
+
+                        1
+                    </td>
+
+
+                    <!-- JUDUL BUKU -->
+
+                    <td>
+
+                        <strong>
+
+                            16 ulu
+                        </strong>
+
+                    </td>
+
+                    <!-- JENIS BERKAS -->
+
+<td>
+
+    su
+</td>
+
+                    <!-- NO BERKAS -->
+
+<td>
+
+    1-100
+</td>
+
+
+
+
+
+                    <!-- TAHUN -->
+
+                    <td>
+
+                        2003
+                    </td>
+
+
+                    <!-- STOK -->
+
+                    <td>
+
+                        
+                            <span class="status status-dipinjam">
+
+                                Habis
+
+                            </span>
+
+                        
+                    </td>
+
+
+                    <!-- AKSI -->
+
+                    <td>
+
+
+                        <a href="http://localhost/perpustakaan2/edit_buku.php?id=6" class="btn btn-warning">
+
+                            ✏️ Edit
+
+                        </a>
+
+
+                        <a href="http://localhost/perpustakaan2/hapus_buku.php?id=6" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus buku ini?')">
+
+                            🗑️ Hapus
+
+                        </a>
+
+
+                    </td>
+
+
+                </tr>
+
+
+            
+
+            </tbody>
+
+        </table>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<span id="PING_CONTENT_PUSH_NOTIFICATION" style="display: none;"></span></body></html>
